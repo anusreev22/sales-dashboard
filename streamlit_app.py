@@ -7,7 +7,8 @@ import plotly.figure_factory as ff
 # ---------------------------
 # Backend API configuration
 # ---------------------------
-API_BASE = "http://localhost:5001"  # Flask backend URL
+API_BASE = "https://web-production-ab05b.up.railway.app"
+  # Flask backend URL
 
 # ---------------------------
 # Page Config
