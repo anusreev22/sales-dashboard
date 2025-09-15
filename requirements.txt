@@ -4,3 +4,8 @@ SQLAlchemy
 openpyxl
 flask-cors
 gunicorn
+streamlit
+pandas
+plotly
+requests
+openpyxl
