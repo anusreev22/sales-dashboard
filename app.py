@@ -96,6 +96,9 @@
 # # ---------- Run ----------
 # if __name__ == "__main__":
 #     app.run(debug=True, port=5001)
+
+
+
 from flask import Flask, jsonify, request
 import pandas as pd
 from sqlalchemy import create_engine
@@ -107,7 +110,7 @@ CORS(app)  # <--- Enable CORS for frontend access
 
 # ---------- File Handling ----------
 EXCEL_FILE = "SuperMarket_Analysis.xlsx"
-CSV_FILE = "SuperMarket Analysis.xlsx"  # your current file (but actually CSV)
+CSV_FILE = "SuperMarket Analysis.xlsx"  # your current file (but actually CSV)
 
 def ensure_excel_file():
     """Convert CSV file to real Excel if needed"""
@@ -187,5 +190,5 @@ def get_sales_data():
 
 # ---------- Run ----------
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5001))  # <--- Use Railway's assigned port
-    app.run(host="0.0.0.0", port=port, debug=False)  # <--- Listen on all interfaces
+    port = int(os.environ.get("PORT", 5001))  # Use Railway's assigned port
+    app.run(host="0.0.0.0", port=port, debug=False)  # Listen on all interfaces
